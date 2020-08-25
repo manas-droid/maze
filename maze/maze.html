@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Solve a Maze!</title>
+    <style media="screen">
+    h1{
+      margin-bottom: 10px;
+      margin-left: 200px;
+    }
+      .Maze,.btn{
+        margin: auto 200px;
+      }
+      .btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 700px;
+        height: 200px
+      }
+      #solve,#reset{
+        width: 100px;
+         height: 40px;
+        border: none;
+        font-size: 20px;
+        padding: 10px;
+        font-family: sans-serif;
+        border: 0.1px solid rgba(0,1,1,0.2);
+        padding: 10px;
+        box-shadow: 2px 1px 2px 1px #888888;
+
+      }
+      .pointer {cursor: pointer;}
+
+    </style>
+  </head>
+  <body>
+    <h1>
+      Solving A Maze By Using DFS !
+    </h1>
+    <div class="Maze">
+      <canvas id="myCanvas" width="1000" height="600">
+      </canvas>
+    </div>
+
+    <div class="btn">
+      <button id="solve" class="pointer"onclick="solveMaze()"> Solve! </button>
+      <button id="reset" class="pointer" onclick="reset()"> Reset! </button>
+    </div>
+
+
+    <script src="maze.js" charset="utf-8">
+    </script>
+  </body>
+
+</html>
